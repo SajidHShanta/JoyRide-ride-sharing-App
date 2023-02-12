@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		FFC9D1842998051F002A495B /* JoyRideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9D1832998051F002A495B /* JoyRideApp.swift */; };
-		FFC9D1862998051F002A495B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9D1852998051F002A495B /* ContentView.swift */; };
 		FFC9D18829980521002A495B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC9D18729980521002A495B /* Assets.xcassets */; };
 		FFC9D18B29980521002A495B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC9D18A29980521002A495B /* Preview Assets.xcassets */; };
+		FFC9D19929993ED3002A495B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9D19829993ED3002A495B /* HomeView.swift */; };
+		FFC9D19B29993F9C002A495B /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9D19A29993F9C002A495B /* MapViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFC9D1802998051F002A495B /* JoyRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC9D1832998051F002A495B /* JoyRideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyRideApp.swift; sourceTree = "<group>"; };
-		FFC9D1852998051F002A495B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFC9D18729980521002A495B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFC9D18A29980521002A495B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFC9D19829993ED3002A495B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FFC9D19A29993F9C002A495B /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,11 @@
 		FFC9D1822998051F002A495B /* JoyRide */ = {
 			isa = PBXGroup;
 			children = (
-				FFC9D1832998051F002A495B /* JoyRideApp.swift */,
-				FFC9D1852998051F002A495B /* ContentView.swift */,
+				FFC9D19129993DE4002A495B /* App */,
+				FFC9D19229993DF3002A495B /* Core */,
+				FFC9D19329993E0B002A495B /* Extensions */,
+				FFC9D19429993E41002A495B /* Managers */,
+				FFC9D19529993E4A002A495B /* Models */,
 				FFC9D18729980521002A495B /* Assets.xcassets */,
 				FFC9D18929980521002A495B /* Preview Content */,
 			);
@@ -65,6 +70,60 @@
 				FFC9D18A29980521002A495B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFC9D19129993DE4002A495B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FFC9D1832998051F002A495B /* JoyRideApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FFC9D19229993DF3002A495B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FFC9D19729993EA8002A495B /* Views */,
+				FFC9D19629993E98002A495B /* ViewModels */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FFC9D19329993E0B002A495B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFC9D19429993E41002A495B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FFC9D19529993E4A002A495B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFC9D19629993E98002A495B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FFC9D19729993EA8002A495B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFC9D19829993ED3002A495B /* HomeView.swift */,
+				FFC9D19A29993F9C002A495B /* MapViewRepresentable.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +196,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC9D1862998051F002A495B /* ContentView.swift in Sources */,
+				FFC9D19929993ED3002A495B /* HomeView.swift in Sources */,
+				FFC9D19B29993F9C002A495B /* MapViewRepresentable.swift in Sources */,
 				FFC9D1842998051F002A495B /* JoyRideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
