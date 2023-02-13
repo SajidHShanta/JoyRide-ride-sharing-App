@@ -12,6 +12,7 @@
 		FFC9D18B29980521002A495B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC9D18A29980521002A495B /* Preview Assets.xcassets */; };
 		FFC9D19929993ED3002A495B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9D19829993ED3002A495B /* HomeView.swift */; };
 		FFC9D19B29993F9C002A495B /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9D19A29993F9C002A495B /* MapViewRepresentable.swift */; };
+		FFC9D19D299A75BB002A495B /* LocationManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9D19C299A75BB002A495B /* LocationManeger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		FFC9D18A29980521002A495B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFC9D19829993ED3002A495B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FFC9D19A29993F9C002A495B /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
+		FFC9D19C299A75BB002A495B /* LocationManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManeger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		FFC9D19429993E41002A495B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				FFC9D19C299A75BB002A495B /* LocationManeger.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC9D19D299A75BB002A495B /* LocationManeger.swift in Sources */,
 				FFC9D19929993ED3002A495B /* HomeView.swift in Sources */,
 				FFC9D19B29993F9C002A495B /* MapViewRepresentable.swift in Sources */,
 				FFC9D1842998051F002A495B /* JoyRideApp.swift in Sources */,
@@ -330,6 +334,7 @@
 				DEVELOPMENT_TEAM = HFX859F777;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location access to find a rider near you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -359,6 +364,7 @@
 				DEVELOPMENT_TEAM = HFX859F777;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location access to find a rider near you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
